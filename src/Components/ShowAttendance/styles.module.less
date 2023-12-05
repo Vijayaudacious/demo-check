@@ -1,0 +1,62 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.conatiner {
+  #flexCenter();
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  padding: @padding-xs - 1 @padding-sm;
+  border-radius: 5px;
+}
+.absent {
+  background-color: @absent;
+  color: @white;
+}
+.present {
+  background-color: @present;
+}
+.halfDay {
+  background-color: @half-day;
+  color: @white;
+}
+.holiday {
+  background-color: @holi-day;
+  color: @white;
+}
+.paid {
+  background-color: @paid-leave;
+  color: @white;
+}
+.weekOff {
+  background-color: @week-off;
+}
+.conatiner {
+  #flexCenter();
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  padding: @padding-xs - 1 @padding-sm;
+  &.absent {
+    background-color: @absent;
+    color: @white;
+  }
+  &.present {
+    background-color: @present;
+  }
+  &.halfDay {
+    background-color: @half-day;
+    color: @white;
+  }
+  &.holiday {
+    background-color: @holi-day;
+    color: @white;
+  }
+  &.paid {
+    background-color: @paid-leave;
+    color: @white;
+  }
+  &.weekOff {
+    background-color: @week-off;
+  }
+}

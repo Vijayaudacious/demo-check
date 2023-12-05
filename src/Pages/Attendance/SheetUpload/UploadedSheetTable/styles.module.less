@@ -1,0 +1,94 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.table {
+  width: 100%;
+  .actionButton {
+    display: flex;
+    justify-content: end;
+    margin: @margin-md 0;
+  }
+  .title {
+    background: @table-head-bg;
+    border-radius: 10px 10px 0px 0px;
+    padding: @padding-sm;
+    justify-content: space-between;
+    * {
+      color: @white;
+    }
+    .listDeadingText {
+      color: @white;
+      text-align: start;
+      margin: auto 0px;
+    }
+    .dateContainer {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      .dateChangeBtn {
+        border-color: @white;
+        &:hover,
+        &:active,
+        &:visited {
+          border-color: @white;
+        }
+      }
+    }
+  }
+  :global {
+    .ant-table {
+      tr > td {
+        padding: 0px;
+        text-align: center;
+        height: 50px;
+      }
+      border-radius: 0px !important;
+
+      .ant-table-tbody > tr.ant-table-row-selected > td {
+        background: @white !important;
+        text-decoration: line-through;
+        font-style: italic;
+      }
+      .ant-table-cell-fix-left,
+      .ant-table-cell-fix-left {
+        &:nth-child(1) {
+          left: 0px !important;
+          padding: 16px;
+        }
+        &:nth-child(2) {
+          left: 48px !important;
+          padding: 16px;
+        }
+        &:nth-child(3) {
+          left: 121px !important;
+          padding: 16px;
+        }
+        &:nth-child(4) {
+          left: 246px !important;
+          padding: 16px;
+        }
+      }
+      .ant-table-cell-fix-right,
+      .ant-table-cell-fix-right {
+        &:nth-last-child(1) {
+          right: 0px !important;
+          padding: 16px;
+        }
+        &:nth-last-child(2) {
+          right: 120px !important;
+          padding: 16px;
+        }
+        &:nth-last-child(3) {
+          right: 247px !important;
+          padding: 16px;
+        }
+      }
+    }
+  }
+}
+
+.attendanceConatiner {
+  #flexCenter();
+  cursor: pointer;
+  height: 100%;
+}

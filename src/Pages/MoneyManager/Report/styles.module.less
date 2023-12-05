@@ -1,0 +1,65 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.chartsCard {
+  margin-top: @margin-xl + 2;
+  margin-bottom: @margin-xl + 7;
+}
+.amountCard {
+  margin-top: @margin-lg - 1;
+}
+.datePickerTitle {
+  margin-bottom: @margin-sm;
+  display: block;
+}
+.cardIcon {
+  padding: @padding-sm + 2;
+  margin: @margin-sm + 2;
+}
+.cardTitle {
+  font-weight: bold;
+  font-size: @font-md;
+  #flexCenter();
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+.cardValue {
+  margin-left: @padding-xs * 3;
+  font-weight: bold;
+  font-size: @font-sm;
+}
+.flexEnd {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  .filterDropdown {
+    width: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .endDatePicker {
+    margin-left: 0;
+  }
+  .filterDropdown {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1600px) {
+  .endDatePicker {
+    margin-left: 0;
+  }
+  .filterDropdown {
+    margin-left: 0;
+  }
+}
+
+.noData {
+  position: absolute;
+  top: 47%;
+  left: 43%;
+  @media (max-width: 768px) {
+    top: 45%;
+    left: 36%;
+  }
+}

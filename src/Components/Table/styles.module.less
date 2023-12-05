@@ -1,0 +1,25 @@
+@import "../../Assets/less/_variables.less";
+.filterSection {
+  align-items: baseline;
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+.search {
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 8px;
+}
+.tableContainer {
+  thead > tr {
+    &:hover {
+      background: #626d8f;
+    }
+  }
+}
+
+:global {
+  .ant-input-clear-icon {
+    color: @heading-color;
+  }
+}

@@ -1,0 +1,127 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.employeeDetailsection {
+  background-color: @white;
+  right: 123px;
+  overflow: hidden;
+}
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  @media (max-width: 480px) {
+    :global {
+      .ant-upload.ant-upload-select-picture-card {
+        border: none;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+  .avtarSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .avatarSize {
+      font-size: (@font-xxl * 2) - 4;
+    }
+
+    :global {
+      .ant-avatar {
+        width: 250px;
+        height: 250px;
+        #flexCenter();
+        margin-bottom: 15px;
+        @media (max-width: 1680px) {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+  .profileImg {
+    width: 300px;
+    height: 300px;
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 150px;
+    @media (max-width: 1680px) {
+      width: 200px;
+      height: 200px;
+    }
+    @media (max-width: 480px) {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.titleName {
+  margin-bottom: @margin-xl - 8;
+  font-weight: bold;
+}
+.formLogines {
+  margin-top: @margin-md + 4;
+}
+.detailBox {
+  border-radius: 8px;
+  padding: @padding-xs @padding-sm + 4;
+  box-shadow: 0 0px 20px rgb(0 0 0 / 10%);
+
+  .empDsc {
+    font-weight: 600;
+    font-size: @font-md;
+    margin-right: @margin-xs;
+  }
+}
+.fields {
+  margin-top: @margin-md * 2 +3;
+}
+
+.submitBtn {
+  width: 130px;
+}
+
+.asteriskIcon {
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+}
+.deleteicon {
+  color: @red;
+  margin: @margin-md;
+}
+.modalImg {
+  border-radius: 160px;
+  width: 50%;
+  padding: @padding-xs+1;
+  margin-left: @margin-xl*2;
+}
+:global {
+  .ant-upload-picture-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .ant-upload.ant-upload-select-picture-card {
+      border: none;
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .employeeDetailsection {
+    padding: @padding-md;
+  }
+  .uploadImage,
+  .avtarUpload {
+    position: inherit;
+  }
+}

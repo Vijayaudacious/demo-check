@@ -1,0 +1,34 @@
+@import "@/Assets/less/_variables.less";
+.loader {
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  z-index: 1;
+}
+.addFeedbackSection {
+  width: auto;
+  overflow-y: auto;
+  .innerSection {
+    padding: @padding-md*2-2;
+    background-color: @white;
+  }
+
+  .retings {
+    width: 200px;
+  }
+}
+.buttonBlue {
+  width: 150px !important;
+  margin-right: @margin-xl+2;
+  margin-top: @margin-md+4;
+}
+
+@media (max-width: 768px) {
+  .addFeedbackSection {
+    height: 100%;
+    .buttonBlue {
+      width: 150px !important;
+      margin-bottom: @margin-sm+2;
+    }
+  }
+}

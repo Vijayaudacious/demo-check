@@ -1,0 +1,81 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.organizationDetailsection {
+  padding: 30px;
+  .imageSection {
+    margin-bottom: 15px;
+    #flexCenter();
+    .employeeimages {
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+    }
+  }
+  .avtarSection {
+    .avatar {
+      #flexCenter();
+      .avatarSize {
+        font-size: (@font-xxl * 2) - 4;
+      }
+    }
+  }
+  .detailBox {
+    word-break: break-all;
+    background-color: #f4faff;
+    border-radius: 8px;
+    padding: 5px 14px;
+    margin-bottom: 10px;
+    .orgLavel {
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .orgDsc {
+      font-weight: 600;
+      font-size: 18px;
+      margin-right: 3px;
+    }
+    .detailBoxTag {
+      width: 120px;
+      white-space: nowrap;
+      align-items: center;
+    }
+  }
+}
+.deleteicon {
+  top: 9px;
+  color: red;
+  margin: auto;
+  display: flex;
+}
+.organisationLogo {
+  border-radius: 10px;
+  max-width: 100%;
+  width: 50%;
+}
+
+.organization {
+  #flexCenter();
+  width: 100%;
+  .addEditBtn {
+    width: 100%;
+  }
+
+  @media (max-width: 990px) {
+    margin-bottom: 40px;
+    .addEditBtn {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .organizationDetailsection {
+    padding: 15px 0;
+  }
+}
+:global {
+  .ant-space {
+    display: flex;
+    align-items: center;
+  }
+}

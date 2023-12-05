@@ -1,0 +1,41 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.headerContainer {
+  border-bottom: 1px solid @black;
+  margin-bottom: @margin-xl;
+  .title {
+    display: flex;
+    justify-content: end;
+    font-size: @font-lg;
+    h1 {
+      border-bottom: 5px solid @black;
+      margin: 0 @margin-lg -2px 0;
+    }
+    .monthContainer {
+      padding-bottom: @padding-sm;
+      .monthPicker {
+        width: 200px;
+      }
+    }
+
+    @media (max-width: 580px) {
+      font-size: @font-md;
+      h1 {
+        margin-bottom: @margin-sm;
+      }
+      .monthContainer {
+        #flexCenter();
+      }
+    }
+  }
+}
+
+.pdfContainer {
+  height: 900px;
+}
+
+.mobileButton {
+  #flexCenter();
+  height: 200px;
+}

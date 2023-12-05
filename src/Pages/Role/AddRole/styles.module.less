@@ -1,0 +1,59 @@
+.mainSection {
+  h1 {
+    margin-bottom: 30px;
+  }
+  .labelText {
+    label {
+      width: auto;
+    }
+  }
+}
+.loginForm {
+  .loginInput:first-letter {
+    height: 45px;
+    border: 1px solid rgba(2, 12, 75, 0.12);
+    border-radius: 8px;
+    text-transform: capitalize;
+  }
+  .buttonBlue {
+    width: 150px;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .saveBtn {
+    background-color: @primary-color;
+    width: 150px;
+    margin-right: 10px;
+  }
+  .chackGroup {
+    display: inline-block;
+  }
+}
+
+:global {
+  .ant-form label {
+    width: 150px;
+  }
+  .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1279px) {
+  .chackGroup {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .buttonBlue {
+    margin-bottom: 10px;
+  }
+  @media (max-width: 480px) {
+    .buttonBlue {
+      width: 100% !important;
+    }
+  }
+}

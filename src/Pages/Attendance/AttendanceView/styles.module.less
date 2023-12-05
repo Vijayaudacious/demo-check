@@ -1,0 +1,80 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+.table {
+  width: 100%;
+  margin-top: @margin-sm+2;
+  .title {
+    background: @white;
+    border-radius: 10px 10px 0px 0px;
+    padding: @padding-sm;
+    box-shadow: 2px 2px 5px rgb(134, 133, 133);
+    .listDeadingText {
+      color: @white;
+      text-align: start;
+      margin: auto 0px;
+    }
+    .dateContainer {
+      display: contents;
+      #flexCenter();
+      margin: 0 auto;
+      .dateChangeBtn {
+        padding: @padding-sm+2;
+        border-color: @black;
+        &:hover,
+        &:active,
+        &:visited {
+          border-color: @black;
+        }
+      }
+    }
+    .detailWrapper {
+      margin-top: @margin-md;
+      #flexCenter();
+      .value {
+        margin-left: @margin-sm;
+        border-radius: 35px;
+        padding: @padding-sm @padding-lg;
+        color: @white;
+        span {
+          margin-right: @margin-xs;
+          font-weight: bold;
+        }
+      }
+      .presentStatus {
+        background-color: @half-day;
+      }
+      .absentStatus {
+        background-color: @absent;
+      }
+      .workingDaystatus {
+        background-color: @paid-leave;
+      }
+      .OverTimeStatus {
+        background-color: @holi-day;
+      }
+      .remainingLeaveStatus {
+        background-color: @paid-leave;
+      }
+    }
+  }
+  .avtarName {
+    font-size: @font-xxl;
+  }
+  .header {
+    background-color: @white;
+  }
+  :global {
+    .ant-table {
+      border-radius: 0px !important;
+    }
+  }
+}
+.monthFilter {
+  margin-top: @margin-xl;
+  margin-left: @margin-lg;
+  padding: @padding-xs;
+  display: flex;
+}
+.outTime {
+  margin-left: @margin-lg + 6;
+}

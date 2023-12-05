@@ -1,0 +1,105 @@
+@import "@/Assets/less/_mixins.less";
+
+.mainSection {
+  .actionEdit {
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 32px;
+    #flexCenter();
+  }
+  .roleTable {
+    font-size: 16px;
+    background-color: #fff;
+    thead > tr > th {
+      padding: 16px 12px;
+    }
+
+    .actionButtons {
+      #flexCenter();
+      width: 30px;
+    }
+    .anticon-delete {
+      width: 30px;
+    }
+    :global {
+      .ant-table-content {
+        overflow: auto;
+      }
+      .ant-btn[disabled],
+      .ant-btn[disabled]:hover,
+      .ant-btn[disabled]:focus,
+      .ant-btn[disabled]:active {
+        width: 30px;
+      }
+      .ant-btn-background-ghost.ant-btn-primary {
+        border-color: #d9d9d9;
+      }
+      .ant-table-thead th.ant-table-column-has-sorters.ant-table-cell-fix-left {
+        &:hover {
+          background-color: #2a2a2a;
+        }
+      }
+    }
+  }
+
+  .headerItems {
+    float: right;
+    margin-right: 3%;
+    .searching_field {
+      width: 220px;
+    }
+
+    .main_table {
+      margin-top: 2rem;
+      overflow: hidden !important;
+    }
+
+    .add_employee {
+      float: right;
+      padding: 0 20px;
+      margin-left: 10px;
+      background-color: red;
+    }
+  }
+
+  .mobilePagination {
+    #flexCenter();
+  }
+}
+:global {
+  .ant-input-clear-icon {
+    font-size: 18px;
+  }
+}
+
+.searchBox {
+  width: 25%;
+  margin: 0 0 10px 20px;
+  height: 40px;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .searchBox {
+    width: calc(100% - 40px) !important;
+  }
+}
+@media (max-width: 1600px) {
+  .roleTable {
+    table {
+      min-width: 1400px;
+      overflow-y: auto;
+    }
+  }
+}
+
+.permission {
+  text-align: center;
+  color: green;
+  font-size: medium;
+}
+
+.noPermission {
+  color: red;
+  font-size: medium;
+}

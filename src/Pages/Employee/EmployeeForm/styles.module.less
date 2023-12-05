@@ -1,0 +1,190 @@
+.loader {
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  z-index: 1;
+}
+.addemployeeSection {
+  width: auto;
+  overflow-y: auto;
+  .innerSection {
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .InputField {
+    width: 100%;
+    line-height: 35px;
+    border-radius: 10px;
+  }
+  .sectionInner {
+    margin: auto;
+    h1 {
+      margin-bottom: 30px;
+    }
+    .asteriskIcon {
+      margin-right: 4px;
+      color: #ff4d4f;
+      font-size: 14px;
+      font-family: SimSun, sans-serif;
+      line-height: 1;
+    }
+    .docSection {
+      justify-content: flex-start;
+    }
+  }
+
+  .inputNames {
+    width: 100%;
+    margin-left: 2px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+  }
+  .selectInputs {
+    width: 100%;
+    line-height: 40px;
+    :global {
+      .ant-select-selector {
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .loginInput {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+  }
+  .addressInput {
+    width: 100%;
+    height: 60px;
+    line-height: 40px;
+    border-radius: 8px;
+  }
+  .DocumentInput {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  .genderInput {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+  }
+  .selectInput {
+    width: 100%;
+    line-height: 40px;
+    :global {
+      .ant-select-selector {
+        border-radius: 8px;
+      }
+    }
+  }
+  .buttonBlue {
+    width: 150px;
+    margin-top: 15px;
+  }
+  .buttonAdd {
+    width: 150px;
+  }
+  .deleteColor {
+    color: red;
+  }
+
+  :global {
+    .ant-form-item-label > label {
+      width: auto;
+    }
+    .ant-radio-group-solid {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 30px;
+      padding: 10px;
+      margin-top: -52px;
+    }
+    .ant-upload-list-text {
+      .ant-upload-list-item-name {
+        width: 200px;
+        white-space: no-warp;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .ant-upload-list-picture {
+      .ant-upload-list-item-name {
+        width: 200px;
+        white-space: no-warp;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .ant-upload-list-item-card-actions-btn {
+      display: none;
+    }
+    .ant-upload-list-item {
+      margin-top: 0;
+    }
+    .ant-upload-list-text {
+      .ant-upload-list-item-name {
+        width: 200px;
+        white-space: no-warp;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .ant-upload-list-picture {
+      .ant-upload-list-item-name {
+        width: 200px;
+        white-space: no-warp;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+.buttonBlue {
+  width: 150px;
+}
+.regeneratePassword {
+  left: 87%;
+  bottom: 850px;
+}
+.buttonCancal {
+  margin: 10px;
+}
+.buttonGroupsection {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .addemployeeSection {
+    height: 100%;
+    .buttonBlue {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+  }
+}
+@media (max-width: 580px) {
+  .addemployeeSection {
+    margin: 10px;
+    .innerSection {
+      padding: 0 10px;
+      margin: 10px 0;
+    }
+    .buttonBlue {
+      margin-right: 10px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .buttonGroupsection {
+    flex-direction: column;
+  }
+  .buttonBlue {
+    width: 100% !important;
+  }
+}

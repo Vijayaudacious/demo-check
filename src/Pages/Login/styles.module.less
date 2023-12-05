@@ -1,0 +1,52 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.setPassTag {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  color: @primary-color;
+  opacity: 1;
+  margin-bottom: 3rem;
+}
+
+.forminner {
+  padding: 0.3rem 0;
+}
+
+:global {
+  ::placeholder {
+    font-size: 16px;
+    letter-spacing: normal;
+  }
+
+  .ant-form-item-explain-error {
+    margin-top: 6px;
+  }
+}
+
+.buttonBlue {
+  background-color: @primary-color;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  border-radius: 8px;
+  color: #ffffff;
+  margin-top: 18px;
+
+  &:hover {
+    box-shadow: 0 0px 10px rgb(0 0 0 / 10%);
+    background-color: transparent;
+    color: @primary-color;
+    border: 1px solid @primary-color;
+  }
+}
+.signupLink {
+  margin-top: @margin-lg;
+  a {
+    color: @blue;
+    font-weight: bold;
+  }
+}

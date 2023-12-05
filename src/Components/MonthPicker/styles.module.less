@@ -1,0 +1,26 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+@import "@/Assets/less/_variables.less";
+
+.container {
+  #flexCenter();
+  .blackBorder {
+    border-color: @black;
+    &:hover,
+    &:active,
+    &:visited {
+      border-color: @black;
+    }
+  }
+  .whiteBorder {
+    border-color: @white;
+    &:hover,
+    &:active,
+    &:visited {
+      border-color: @white;
+    }
+  }
+}
+.label {
+  margin-right: @margin-lg;
+}

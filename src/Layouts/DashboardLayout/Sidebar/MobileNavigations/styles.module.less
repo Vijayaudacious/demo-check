@@ -1,0 +1,48 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.mobileNav {
+  position: fixed;
+  width: 100%;
+  background: #2020f8;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: @padding-md;
+  color: @white;
+
+  .link {
+    color: @white;
+  }
+  .item {
+    #flexCenter;
+    flex-direction: column;
+
+    .icon {
+      color: @black;
+      font-size: xx-large;
+      #flexCenter;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.drawerItem {
+  padding: @padding-md 0;
+  .label {
+    font-size: @font-sm;
+    border-bottom: 1px solid #ccc;
+  }
+  .menuItems {
+    padding: @padding-sm;
+    display: flex;
+    flex-direction: column;
+    gap: @padding-md;
+
+    .link {
+      font-size: @font-md;
+    }
+  }
+}

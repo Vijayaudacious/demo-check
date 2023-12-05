@@ -1,0 +1,55 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.indicatorContainer {
+  #flexCenter();
+  margin: @margin-sm 0;
+  h3 {
+    display: flex;
+    align-items: baseline;
+    .status {
+      width: 50px;
+      font-size: @font-md;
+      font-weight: 900;
+      text-transform: capitalize;
+      border-radius: 5px;
+      margin: 0px @margin-sm;
+      border: 1px solid #d9d9d9;
+    }
+  }
+  @media (max-width: 580px) {
+    display: block;
+  }
+}
+
+.conatiner {
+  #flexCenter();
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  padding: @padding-xs - 1 @padding-sm;
+  border-radius: 5px;
+}
+.reject {
+  background-color: @absent;
+  color: @white;
+}
+.approve {
+  background-color: @approve-leave;
+  color: @white;
+}
+.pending {
+  background-color: @pending-leave;
+  color: @white;
+}
+.withdrawal {
+  background-color: @withdrawal-leave;
+  color: @white;
+}
+.conatiner {
+  #flexCenter();
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  padding: @padding-xs - 1 @padding-sm;
+}

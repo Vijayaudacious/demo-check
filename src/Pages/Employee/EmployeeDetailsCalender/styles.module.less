@@ -1,0 +1,18 @@
+.mainSection {
+  margin-top: 5px;
+  .radioInput {
+    padding: 0 !important;
+  }
+  :global {
+    .ant-radio-group {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 30px;
+      .ant-radio-button-checked {
+        background-color: @primary-color !important;
+        border-color: transparent;
+      }
+    }
+  }
+}

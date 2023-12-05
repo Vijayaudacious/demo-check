@@ -1,0 +1,60 @@
+.antd-table-custom-class thead th,
+.antd-table-custom-class tbody td {
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+}
+
+.antd-table-custom-class tbody td {
+  white-space: nowrap;
+  word-break: break-word;
+  word-break: break-all;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.fc-button-group {
+  background-color: rgb(43, 39, 39);
+  color: rgb(224, 217, 217);
+}
+
+.fc-button-group:hover {
+  background: none;
+  background-color: rgb(224, 217, 217);
+}
+
+.anticon-plus {
+  font-size: large;
+}
+
+.ant-modal-footer {
+  display: flex;
+  justify-content: end;
+}
+
+.ant-modal-confirm-btns {
+  margin-top: 24px;
+  flex-flow: row-reverse;
+  display: flex;
+  justify-content: end;
+  text-align: center;
+}
+
+.ant-picker-time-panel-column>li.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner {
+  color: #fff !important;
+}
+
+.ant-picker-time-panel-column>li.ant-picker-time-panel-cell .ant-picker-time-panel-cell-inner:hover {
+  color: #696969 !important;
+}

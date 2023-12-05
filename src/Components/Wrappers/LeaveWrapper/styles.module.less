@@ -1,0 +1,115 @@
+.mainSection {
+  margin-top: 0;
+  .mainInner {
+    .breadcrumb {
+      height: 40px;
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      a {
+        font-size: 16px;
+      }
+    }
+
+    .breadcrumbItem {
+      margin-left: 20px;
+      font-size: 20px;
+    }
+  }
+  table {
+    tr {
+      th {
+        background-color: #f1faff;
+
+        a {
+          color: #3e5569;
+          padding: 10px 0 !important;
+        }
+      }
+    }
+  }
+
+  :global {
+    .ant-radio-group {
+      border: "2px solid red";
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .ant-radio-button-checked {
+        background-color: @primary-color !important;
+        border-color: transparent;
+      }
+    }
+
+    .fc-col-header-cell-cushion {
+      padding: 10px;
+      color: #3e5569;
+    }
+
+    .fc-daygrid-day-number {
+      background-color: #e7f4ff;
+      border-radius: 50px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .fc-col-header {
+      width: 100%;
+    }
+
+    .fc-button-primary {
+      background-color: #1183e1;
+      border: 1px solid #1183e1;
+
+      &:hover,
+      &:active {
+        background-color: #fff !important;
+        color: #1183e1 !important;
+        border: 1px solid #1183e1;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .fc-button-primary:not(:disabled).fc-button-active:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+.searchBox {
+  width: calc(100% - 40px);
+  margin: 0 0 0 30px;
+  height: 40px;
+  border-radius: 8px;
+}
+@media (max-width: 989px) {
+  .searchBox {
+    width: calc(100% - 60px) !important;
+  }
+  :global {
+    .ant-radio-button-wrapper {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 580px) {
+  .mainSection {
+    margin-top: 10px;
+    .mainInner {
+      margin: 10px;
+      padding: 10px;
+    }
+    :global {
+      .ant-radio-button-wrapper {
+        padding: 0 10px;
+      }
+    }
+  }
+}

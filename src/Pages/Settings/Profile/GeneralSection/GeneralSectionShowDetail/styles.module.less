@@ -1,0 +1,96 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.loader {
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  z-index: 1;
+}
+.imageSection {
+  #flexCenter();
+  :global {
+    .ant-avatar {
+      width: 300px;
+      height: 300px;
+      #flexCenter();
+      @media (max-width: 1680px) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+  .avatarSize {
+    font-size: 100px;
+    float: left;
+  }
+}
+.settingSection {
+  float: right;
+}
+.employeeDetailsection {
+  background-color: #fff;
+  .employeeimages {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+  .profileImg {
+    width: 300px;
+    height: 300px;
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 150px;
+  }
+  .updateButton {
+    width: 50%;
+    margin-left: @margin-xl*2;
+    margin-top: @margin-lg;
+    margin-bottom: @margin-xs*3;
+  }
+  .detailBox {
+    background-color: #f4faff;
+    word-break: break-all;
+    border-radius: 8px;
+    padding: @padding-xs @padding-md;
+    margin-bottom: @margin-sm+2;
+    .empLavel {
+      font-weight: 400;
+      font-size: @font-sm + 2;
+    }
+    .empDsc {
+      font-weight: 600;
+      font-size: @font-md;
+      margin-right: @margin-xs;
+    }
+    .detailBoxTag {
+      width: 150px;
+      white-space: nowrap;
+      text-align: center;
+    }
+  }
+  .mainSection {
+    padding: @padding-xs + 3;
+  }
+}
+:global {
+  .ant-upload.ant-upload-select-picture-card {
+    width: 300px;
+    height: 300px;
+    margin-right: @margin-sm;
+    margin-bottom: @margin-sm;
+    text-align: center;
+    vertical-align: top;
+    background-color: #fafafa;
+    border: 1px dashed #d9d9d9;
+    border-radius: 150px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+}
+
+@media (max-width: 767px) {
+  .employeeDetailsection {
+    padding: @padding-md -1;
+  }
+}

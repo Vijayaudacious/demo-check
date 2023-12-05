@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <g id="leaves" transform="translate(-4836 -1065)">
+    <circle id="Ellipse_16" data-name="Ellipse 16" cx="17.5" cy="17.5" r="17.5" transform="translate(4836 1065)" fill="#0f0f0f"/>
+    <g id="Group_99" data-name="Group 99" transform="translate(4798 729)">
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M-3059,1958h-11a2,2,0,0,1-2-2v-11a2,2,0,0,1,2-2h11a2,2,0,0,1,2,2v11A2,2,0,0,1-3059,1958Zm-11-12a1,1,0,0,0-1,1v9a1,1,0,0,0,1,1h11a1,1,0,0,0,1-1v-9a1,1,0,0,0-1-1Z" transform="translate(3120 -1596)" fill="#fff"/>
+      <rect id="Rectangle_83" data-name="Rectangle 83" width="2" height="2" transform="translate(51 345)" fill="#fff"/>
+      <g id="Group_91" data-name="Group 91">
+        <g id="Rectangle_86" data-name="Rectangle 86" transform="translate(51 352)" fill="#fff" stroke="#fff" stroke-width="1">
+          <rect width="1.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_89" data-name="Rectangle 89" transform="translate(51 355)" fill="#fff" stroke="#1183e1" stroke-width="1">
+          <rect width="1.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_87" data-name="Rectangle 87" transform="translate(58.5 352)" fill="#fff" stroke="#fff" stroke-width="1">
+          <rect width="1.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_91" data-name="Rectangle 91" transform="translate(58.5 355)" fill="#fff" stroke="#1183e1" stroke-width="1">
+          <rect width="1.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_88" data-name="Rectangle 88" transform="translate(55 352)" fill="#fff" stroke="#1183e1" stroke-width="1">
+          <rect width="1.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_90" data-name="Rectangle 90" transform="translate(55 355)" fill="#fff" stroke="#fff" stroke-width="1">
+          <rect width="1.5" height="1.5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+        </g>
+      </g>
+      <rect id="Rectangle_84" data-name="Rectangle 84" width="2" height="2" transform="translate(58 345)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

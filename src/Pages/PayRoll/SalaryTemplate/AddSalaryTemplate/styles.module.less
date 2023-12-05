@@ -1,0 +1,40 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.buttonSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.removeIcon,
+.addIcon {
+  font-size: @font-lg;
+}
+.modal {
+  margin-top: @margin-lg*5;
+}
+.removeIcon {
+  color: @red;
+}
+.addIcon {
+  color: @green;
+}
+@media (max-width: 767px) {
+  .buttonSection {
+    margin: @margin-lg 0;
+  }
+}
+
+.amountInput {
+  input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+  }
+  :global {
+    .ant-input-group-addon {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}

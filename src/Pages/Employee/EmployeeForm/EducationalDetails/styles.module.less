@@ -1,0 +1,21 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.buttonSection {
+  margin-top: @margin-md;
+  padding-left: @padding-sm;
+  #flexCenter();
+  font-size: @font-lg;
+  .removeIcon {
+    color: @red;
+  }
+
+  .addIcon {
+    color: @btn-primary-bg;
+  }
+
+  .removeIcon,
+  .addIcon {
+    margin: 0 @margin-sm @margin-sm 0;
+  }
+}

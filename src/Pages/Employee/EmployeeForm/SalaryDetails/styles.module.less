@@ -1,0 +1,38 @@
+@import "@/Assets/less/_mixins.less";
+@import "@/Assets/less/_variables.less";
+
+.pagination {
+  #flexCenter();
+  margin: @margin-sm;
+}
+
+.cardsWrapper {
+  .cardContainer {
+    min-height: 280px;
+    margin: @margin-sm 0;
+    border-radius: 10px;
+    :global {
+      .ant-card-head-title {
+        white-space: break-spaces;
+      }
+      .ant-card-body {
+        padding: 0 @padding-sm;
+      }
+    }
+    &.selectedCard {
+      border: 2px solid @black;
+    }
+  }
+  .textContent {
+    display: flex;
+    justify-content: space-around;
+  }
+  .positionEnd {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    .toggleButton {
+      color: @blue;
+    }
+  }
+}

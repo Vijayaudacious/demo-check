@@ -1,0 +1,133 @@
+@import "@/Assets/less/_mixins.less";
+@import "@/Assets/less/_variables.less";
+
+.mainSection {
+  margin-top: 15px;
+  .loader {
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    z-index: 1;
+  }
+  .divider {
+    margin-top: 0;
+  }
+  .mainInner {
+    :global {
+      .fc-h-event {
+        text-align: center;
+        .fc-event-main {
+          #flexCenter();
+          text-align: center;
+        }
+      }
+
+      .fc-col-header-cell-cushion {
+        padding: 10px;
+        color: #3e5569;
+      }
+
+      .fc-daygrid-day-number {
+        background-color: #e7f4ff;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        margin: 5px;
+      }
+
+      .fc-col-header {
+        width: 100%;
+      }
+
+      .fc-button-primary {
+        background-color: #1183e1;
+        border: 1px solid #1183e1;
+
+        &:hover,
+        &:active {
+          background-color: #fff !important;
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      .fc-button-primary:not(:disabled).fc-button-active:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+  .upgradeRestBtn {
+    margin-left: @margin-xl*3.3;
+    top: 25px;
+    height: 10%;
+    width: 35%;
+    font-weight: bold;
+  }
+}
+.nameLink {
+  cursor: pointer;
+  &:hover {
+    color: #29539b;
+  }
+}
+
+.requestName {
+  margin-left: 30px;
+}
+.titleName {
+  margin-left: 44px;
+}
+:global {
+  #name,
+  #title,
+  #description {
+    margin-bottom: 0;
+    font-size: 16px;
+    padding-left: 10px;
+    white-space: nowrap;
+    @media (max-width: 579px) {
+      margin-left: 0 !important;
+      padding-left: 0;
+    }
+  }
+
+  .firstHalf {
+    width: 100px;
+  }
+  .secondHalf {
+    float: right;
+    width: 100px;
+  }
+
+  a.fc-daygrid-event.fc-daygrid-block-event {
+    padding: @padding-xs;
+  }
+}
+
+.searchBox {
+  width: 25%;
+  margin: 0 0 10px 0px;
+  height: 40px;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  table {
+    width: 1200px;
+  }
+  .searchBox {
+    width: 100%;
+  }
+  :global {
+    .ant-radio-button-wrapper {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 580px) {
+  .mainSection {
+    padding: 10px 0;
+  }
+}

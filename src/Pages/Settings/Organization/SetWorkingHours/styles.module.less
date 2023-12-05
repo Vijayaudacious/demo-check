@@ -1,0 +1,45 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.timingContainer {
+  .checkboxs {
+    margin-bottom: @margin-md;
+    .checkboxGroups {
+      width: 35%;
+      label {
+        width: 100px;
+      }
+      @media (max-width: 1279px) {
+        width: 100%;
+      }
+    }
+  }
+  .timing {
+    .day {
+      min-width: 80px;
+    }
+    .copyText {
+      cursor: pointer;
+      color: @blue;
+
+      span {
+        padding-left: @padding-sm;
+      }
+    }
+    .formLabel {
+      min-width: 80px;
+      text-align: start;
+      padding-top: @padding-sm;
+    }
+  }
+  .startTime {
+    width: 160px;
+    @media (max-width: 580px) {
+      width: 100%;
+      margin-right: @margin-xl;
+    }
+  }
+  .submitButton {
+    padding: 0 @padding-lg;
+  }
+}

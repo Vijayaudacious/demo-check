@@ -1,0 +1,28 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+.documentContainer {
+  min-width: 700px;
+  .card {
+    min-width: 250px;
+    margin: @margin-md;
+    height: 300px;
+    #flexCenter();
+    .imageContainer {
+      margin-top: @margin-md;
+      min-height: 200px;
+      #flexCenter();
+    }
+    .cardHeader {
+      display: flex;
+      justify-content: space-between;
+    }
+    .plusIcon {
+      font-size: 80px;
+      #flexCenter();
+    }
+    .addDocument {
+      margin-top: @margin-md;
+      text-align: center;
+    }
+  }
+}

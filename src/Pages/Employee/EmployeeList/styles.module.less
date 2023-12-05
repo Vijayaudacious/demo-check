@@ -1,0 +1,161 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.EmployeeSection {
+  .action {
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 32px;
+    margin-right: 10px;
+  }
+
+  .startDate {
+    margin-bottom: @margin-md;
+  }
+  .endDate {
+    width: 125%;
+    margin-top: @margin-xs;
+    margin-bottom: @margin-lg;
+  }
+
+  .nameLink {
+    cursor: pointer;
+    &:hover {
+      color: #29539b;
+      text-decoration: underline;
+    }
+  }
+  .InputField {
+    :global {
+      .ant-select-selector,
+      .ant-select-selection-search,
+      .ant-select-show-search {
+        min-height: 40px;
+        width: 100% !important;
+        .ant-select-selection-search {
+          display: none;
+        }
+      }
+    }
+  }
+  .scrollableDropdown {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .deleteBtn {
+    text-shadow: none;
+    width: 32px;
+    margin: 1px;
+    margin-right: 20px;
+    align-items: center;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+    font-size: 16px;
+    border-radius: 4px;
+    vertical-align: -3px;
+    cursor: pointer;
+  }
+  .editBtn {
+    color: #1183e1;
+  }
+  .tableWidth {
+    width: auto;
+  }
+  .rightData {
+    @media (max-width: 480px) {
+      word-break: break-all;
+    }
+  }
+}
+.filterModal {
+  padding: @padding-sm;
+}
+.upgradeTitle {
+  color: @white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.upgradeTitle:hover {
+  color: @white;
+}
+table {
+  tr {
+    td {
+      &:last-child {
+        button {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto 5px;
+        }
+      }
+    }
+  }
+}
+:global {
+  .ant-card-head-title {
+    a {
+      color: white;
+    }
+  }
+  .ant-picker-clear > * {
+    color: @heading-color;
+  }
+  .ant-radio-group {
+    border: "2px solid red";
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    @media (max-width: 580px) {
+      justify-content: center;
+    }
+    .ant-radio-button-checked {
+      border-color: transparent;
+    }
+  }
+
+  .ant-btn {
+    margin-bottom: 0;
+  }
+  .ant-dropdown-menu-item {
+    text-align: left;
+  }
+}
+.radioButton {
+  display: flex;
+  position: relative;
+  justify-content: end;
+}
+
+.mobilePagination {
+  #flexCenter();
+}
+
+@media (max-width: 580px) {
+  .EmployeeSection {
+    margin: 10px;
+  }
+  .radioButton {
+    flex-direction: column;
+    :global {
+      .ant-radio-button-wrapper {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  :global {
+    .ant-page-header-heading-title {
+      font-size: 18px;
+    }
+    .ant-radio-button-wrapper {
+      padding: 0 10px;
+    }
+  }
+}

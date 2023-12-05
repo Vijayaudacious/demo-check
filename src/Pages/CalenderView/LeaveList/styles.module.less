@@ -1,0 +1,31 @@
+.listTable {
+  table {
+    thead {
+      tr {
+        th {
+          &:nth-of-type(10) {
+            width: 150px;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          &:first-child {
+            width: 70px;
+          }
+          &:last-child {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .listTable {
+    margin: 10px;
+  }
+}

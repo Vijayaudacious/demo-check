@@ -1,0 +1,39 @@
+@import "@/Assets/less/_variables.less";
+.passwordContainer {
+  padding: 30px 0 !important;
+  overflow: hidden;
+  justify-content: center;
+  .detailBox {
+    background-color: #f4faff;
+    border-radius: 8px;
+    padding: 5px 11px;
+    display: flex;
+
+    .empDsc {
+      font-weight: 600;
+      font-size: 18px;
+      margin-right: 3px;
+    }
+  }
+  .fields {
+    margin-top: 35px;
+  }
+  .buttonGroup {
+    display: flex;
+  }
+  .submitButton {
+    width: 130px;
+  }
+
+  :global {
+    .ant-form label {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .employeeDetailsection {
+    padding: 15px 0;
+  }
+}

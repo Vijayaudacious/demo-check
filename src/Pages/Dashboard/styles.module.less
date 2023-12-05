@@ -1,0 +1,85 @@
+@import "@/Assets/less/_mixins.less";
+@import "@/Assets/less/_variables.less";
+
+.mainDashboard {
+  .imgWidth {
+    width: 35px;
+  }
+  .cardContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  :global {
+    .fc-col-header-cell-cushion {
+      padding: 10px;
+      color: #3e5569;
+    }
+
+    .fc-col-header {
+      width: 100%;
+    }
+
+    .fc-button-primary {
+      background-color: #1183e1;
+      border: 1px solid #1183e1;
+
+      &:hover,
+      &:active {
+        background-color: #fff !important;
+        color: #1183e1 !important;
+        border: 1px solid #1183e1;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .fc-button-primary:not(:disabled).fc-button-active:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  .centerItem {
+    #flexCenter;
+    margin-bottom: 0;
+  }
+  .avatar {
+    background: @holi-day;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchBox {
+    width: 100%;
+  }
+
+  .mainDashboard {
+    .breadcrumb {
+      justify-content: flex-start;
+    }
+    :global {
+      .ant-radio-button-wrapper {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  :global {
+    .fc-header-toolbar {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .mainDashboard {
+    margin: 10px;
+  }
+}
+
+.removebutton {
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}

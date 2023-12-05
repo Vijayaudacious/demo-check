@@ -1,0 +1,144 @@
+@import "@/Assets/less/_mixins.less";
+
+.mainSection {
+  #flexCenter();
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-blue-business-finance-earning-banner-image_173585.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  .containerSection {
+    display: flex;
+    width: auto;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .rowSection {
+    align-items: center;
+    justify-content: center;
+    .leftHeading {
+      margin-top: 10px;
+      span {
+        color: #ffffff;
+        font-size: 32px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 14px;
+        color: #ffffff;
+        width: calc(100% - 150px);
+      }
+      :global {
+        .ant-divider-horizontal {
+          background-color: #ffffff;
+        }
+      }
+    }
+    .container {
+      border-radius: 18px;
+      background-color: white;
+      opacity: 1;
+    }
+    .formContainer {
+      padding: 2rem;
+      border-radius: 18px;
+      box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      margin: 100px 0;
+
+      :global {
+        ::placeholder {
+          font-size: 16px;
+          letter-spacing: normal;
+        }
+        .ant-form-item-explain-error {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.content_para {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #c1c1c1;
+  opacity: 1;
+  margin: 0;
+  padding-right: 50px;
+  padding-right: 100px;
+}
+.logo {
+  opacity: 1;
+  background: 0% 0% no-repeat padding-box;
+}
+@media (max-width: 1023.98px) {
+  .mainSection {
+    overflow: hidden;
+    height: 999px;
+    .content {
+      p {
+        margin: auto;
+      }
+    }
+    .rowSection {
+      padding: 0 1rem;
+      .container {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .mainSection {
+    overflow-x: hidden;
+    padding: 10px 20px;
+    height: 999px;
+    .containerSection {
+      width: 100%;
+      height: auto;
+    }
+    .content {
+      .content_para {
+        margin: auto;
+        padding-right: 0;
+        font-size: 14px;
+      }
+    }
+    .rowSection {
+      :global {
+        .ant-image {
+          width: 150px;
+        }
+      }
+      .centerSection {
+        text-align: center;
+        margin-bottom: 20px;
+
+        .leftHeading {
+          p {
+            width: auto;
+          }
+        }
+      }
+      .container {
+        width: 100%;
+        .formContainer {
+          width: 100%;
+          padding: 2rem;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

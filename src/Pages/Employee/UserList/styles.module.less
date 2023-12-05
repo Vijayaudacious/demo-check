@@ -1,0 +1,87 @@
+.main {
+  :global {
+    .ant-table {
+      overflow-x: auto;
+      border-radius: 10px;
+    }
+    .anticon-check,
+    .anticon-close {
+      border-radius: 40px;
+      padding: 10px;
+      color: #fff;
+      margin: 0;
+    }
+    .anticon-check {
+      background-color: #8bc34a;
+    }
+    .anticon-close {
+      background-color: #ff5722;
+    }
+    .ant-table-placeholder {
+      .ant-table-cell {
+        width: 100%;
+      }
+    }
+  }
+  table {
+    width: 100%;
+    table-layout: fixed;
+
+    thead {
+      tr {
+        th {
+          width: 12.5%;
+          &:first-child {
+            width: 70px;
+          }
+          &:last-child {
+            min-width: 140px;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          width: 12.5%;
+          &:first-child {
+            width: 70px;
+          }
+          &:last-child {
+            min-width: 140px;
+            span {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+:global {
+  .anticon-check,
+  .anticon-close {
+    border-radius: 40px;
+
+    color: #fff;
+  }
+  .anticon-check {
+    color: green;
+  }
+  .anticon-close {
+    margin-left: 10px;
+    color: red;
+  }
+}
+@media (max-width: 580px) {
+  .main {
+    padding: 10px;
+  }
+}
+
+:global {
+  .ant-btn {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,51 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.footerLink {
+  color: @blue;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+}
+.modalBody {
+  background-color: @heading-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .links {
+    color: @white;
+    margin-top: @margin-sm;
+  }
+}
+.content {
+  border: 1px solid gray;
+  border-radius: 8px;
+  #flexCenter();
+  font-size: @font-sm;
+  padding: @padding-sm 0;
+}
+.centerContent {
+  #flexCenter();
+  width: 100%;
+}
+.nameLink {
+  cursor: pointer;
+  &:hover {
+    color: #29539b;
+    text-decoration: underline;
+  }
+}
+.filtersContainer {
+  margin-bottom: @margin-sm;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  @media (max-width: 580px) {
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.dateFilter {
+  margin-top: @margin-md;
+  width: 300px;
+}

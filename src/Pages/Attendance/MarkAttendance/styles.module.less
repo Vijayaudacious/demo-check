@@ -1,0 +1,26 @@
+@import "@/Assets/less/_variables.less";
+
+.header {
+  margin-bottom: @margin-md;
+  .title {
+    margin-top: @margin-md;
+  }
+  .filter {
+    margin: 0px @margin-xl;
+  }
+  .savebtn {
+    margin-top: @margin-lg;
+  }
+}
+.formWrapper {
+  :global {
+    .ant-checkbox-inner {
+      width: 20px;
+      height: 20px;
+    }
+    .ant-checkbox-inner::after {
+      width: 7px;
+      height: 7px;
+    }
+  }
+}

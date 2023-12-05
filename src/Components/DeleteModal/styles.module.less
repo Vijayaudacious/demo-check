@@ -1,0 +1,36 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.action {
+  background-color: @white;
+  border-radius: 50%;
+  text-align: center;
+  width: 32px;
+  color: @red;
+}
+
+.deleteModal {
+  :global {
+    .ant-modal-content {
+      border-radius: 20px;
+      .ant-modal-header {
+        border-radius: 20px 20px 0 0;
+        background: @black;
+        padding-right: 50px !important;
+        * {
+          color: @white;
+        }
+        @media (max-width: @mobile-width) {
+          background: @white;
+          * {
+            color: @black;
+          }
+        }
+      }
+    }
+    .ant-btn-dangerous {
+      background-color: @btn-dangerous-color;
+      color: @white;
+    }
+  }
+}

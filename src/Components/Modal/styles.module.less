@@ -1,0 +1,73 @@
+@import "@/Assets/less/_variables.less";
+@import "@/Assets/less/_mixins.less";
+
+.customModal {
+  :global {
+    .ant-modal-content {
+      border-radius: 20px;
+      .ant-modal-header {
+        border-radius: 20px 20px 0 0;
+        background: @black;
+        padding-right: 50px !important;
+        * {
+          color: @white;
+        }
+      }
+    }
+  }
+
+  // mobile css
+  @media (max-width: @mobile-width) {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    max-width: unset;
+
+    :global {
+      .ant-modal-content {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+
+        .ant-modal-close {
+          display: none;
+        }
+
+        .ant-modal-header {
+          text-align: center;
+          background-color: @white;
+          padding: 20px 0px;
+          padding-right: 0 !important;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 20%;
+            height: 3px;
+            background: #b8b7b7;
+            top: 2px;
+            left: 40%;
+            border-radius: 10px;
+          }
+          .ant-modal-title,
+          * {
+            color: @black;
+          }
+        }
+      }
+
+      .ant-modal-body {
+        overflow-y: auto;
+        max-height: calc(100vh - 240px);
+      }
+      .ant-modal-footer {
+        justify-content: center;
+        button {
+          flex: 1;
+        }
+      }
+    }
+  }
+}

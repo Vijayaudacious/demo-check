@@ -1,0 +1,30 @@
+@import "@/Assets/less/_variables.less";
+.FeedbackSection {
+  .FeedbackHeading {
+    padding: 0 @padding-md -2;
+  }
+}
+
+.startDate {
+  width: 100%;
+  margin-bottom: @margin-md;
+}
+.endDate {
+  width: 150%;
+  margin-top: @margin-xs;
+}
+.editBtn {
+  color: #1183e1;
+  margin: 1px;
+  margin-right: @margin-md + 2;
+  margin-bottom: @margin-sm;
+  align-items: center;
+}
+.feedbackSummary {
+  white-space: pre-wrap;
+}
+@media (max-width: 580px) {
+  .FeedbackSection {
+    margin: @margin-sm + 2;
+  }
+}
