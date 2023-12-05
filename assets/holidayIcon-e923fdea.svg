@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.001" height="45" viewBox="0 0 40.001 45">
+  <g id="Group_117" data-name="Group 117" transform="translate(-6042.998 -2315)">
+    <g id="Group_109" data-name="Group 109" transform="translate(6043.019 2314.689)">
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M38,40H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H38a2,2,0,0,1,2,2V38A2,2,0,0,1,38,40ZM3.666,8a1,1,0,0,0-1,1V36.333a1,1,0,0,0,1,1H36.334a1,1,0,0,0,1-1V9a1,1,0,0,0-1-1Z" transform="translate(-0.019 5.311)" fill="#fff"/>
+      <rect id="Rectangle_83" data-name="Rectangle 83" width="5" height="5" transform="translate(7.981 0.311)" fill="#fff"/>
+      <rect id="Rectangle_84" data-name="Rectangle 84" width="5" height="5" transform="translate(26.981 0.311)" fill="#fff"/>
+    </g>
+    <text id="H" transform="translate(6054 2351)" fill="#fff" font-size="27" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">H</tspan></text>
+  </g>
+</svg>
